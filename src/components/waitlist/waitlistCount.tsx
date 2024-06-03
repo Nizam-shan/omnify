@@ -9,12 +9,11 @@ type WaitlistCountProps = {
   listData: ListItem[];
 };
 
-const  WaitlistCount: React.FC<WaitlistCountProps> = ({listData}) => {
-
-    return (
-        <>
-            {listData.map((item,index)=>(
-                <div
+const WaitlistCount: React.FC<WaitlistCountProps> = ({ listData }) => {
+  return (
+    <>
+      {listData.map((item, index) => (
+        <div
           key={index}
           className="flex flex-col sm:flex-row items-center border-2 rounded-lg p-1 hover:border-[#64748B] "
           role="region"
@@ -29,9 +28,9 @@ const  WaitlistCount: React.FC<WaitlistCountProps> = ({listData}) => {
           </span>
           <p className="text-[#64748B]">{item?.value}</p>
         </div>
-            ))}
-        </>
-    )
-}
+      ))}
+    </>
+  );
+};
 
-export default WaitlistCount
+export default WaitlistCount;

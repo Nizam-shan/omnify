@@ -48,10 +48,10 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
 
       <div
         className={`grid ${
-          !isCollapsed ? "md:grid-cols-[240px_1fr]" : "md:grid-cols-[100px_1fr]"
+          !isCollapsed ? "grid-cols-[240px_1fr]" : "grid-cols-[100px_1fr]"
         } w-screen overflow-x-hidden`}
       >
-        <div className="hidden md:block">
+        <div className=" md:block">
           <Sidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
         </div>
 

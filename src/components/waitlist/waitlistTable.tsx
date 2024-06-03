@@ -233,7 +233,7 @@ export const WaitListTable: React.FC = () => {
               <input
                 type="text"
                 id="table-search-users"
-                className="block p-2 ps-10 text-sm text-gray-900  rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-100 border-none  shadow-md dark:bg-white  dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-100 "
+                className="block p-2 ps-10 text-sm text-gray-900  rounded-lg md:w-80 w-50 bg-gray-50 focus:ring-blue-500 focus:border-blue-100 border-none  shadow-md dark:bg-white  dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-100 "
                 placeholder="Search for client"
                 value={searchTerm}
                 onChange={handleInputChange}
@@ -244,7 +244,7 @@ export const WaitListTable: React.FC = () => {
               className="cursor-pointer"
             >
               <svg
-                className="w-5 h-6 text-[#334155] dark:text-[#334155]"
+                className="md:flex hidden w-5 h-6 text-[#334155] dark:text-[#334155]"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -263,7 +263,7 @@ export const WaitListTable: React.FC = () => {
             </div>
             <div>
               <svg
-                className="w-5 h-6 text-[#334155] dark:text-[#334155]"
+                className="w-5 h-6 text-[#334155] dark:text-[#334155] md:flex hidden"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -365,12 +365,12 @@ export const WaitListTable: React.FC = () => {
 
                     <button
                       type="button"
-                      className={`inline-flex items-center px-5 py-2.5 gap-2 text-sm font-medium text-center   focus:ring-4 focus:outline-none ${
+                      className={`inline-flex items-center  px-5  py-2.5 gap-2 text-sm font-medium text-center   focus:ring-4 focus:outline-none ${
                         item?.status === "Lead"
                           ? "bg-[#E2E8F0] text-[#3B82F6]"
                           : item?.status === "Active"
                           ? "bg-[#E2E8F0] text-[#15803D]"
-                          : "bg-[#F1F5F9] text-[#334155]"
+                          : "bg-[#F1F5F9] text-[#3B82F6]"
                       } rounded-full `}
                     >
                       <span
